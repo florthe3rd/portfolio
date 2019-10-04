@@ -286,6 +286,17 @@ transform: scaleX(1);
 	padding: 0;
 	border-radius: 10px;
 }
+.works_box .box img{
+   width: 1000px;
+   height: 527px;
+   transition: .5s;
+}
+
+
+.works_box .box:hover img{
+	opacity: .3;
+
+}
 
 .works_box .box .visit_box{
 	position: absolute;
@@ -295,8 +306,8 @@ transform: scaleX(1);
 	height: 243px;
 	margin: auto;
 	border-radius: 10px 10px 0 0;
-	background: rgba(41, 40, 38,.8);
-	transform: scaleX(0);
+	
+	transform: scaleY(0);
 	transition: transform .5s;
 	-moz-transition: transform .5s;
 	-o-transition: transform .5s;
@@ -398,6 +409,14 @@ transform: scaleX(1);
 	text-align: left
 	width: 100;
 }
+
+
+section#contact{
+	min-height: 80vh;
+	
+}
+
+
 
 
 
