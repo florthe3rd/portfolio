@@ -53,7 +53,7 @@ section{
 	height: 100%;
 	min-height: 100vh;
 	padding: 60px;
-	margin: auto;
+	margin: 0 auto;
 }
 
 nav	{
@@ -252,7 +252,7 @@ transform: scaleX(1);
 }
 
 .about_box{
-	padding:60px 0px;
+	padding:20px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -278,25 +278,20 @@ transform: scaleX(1);
 
 
 .works_box{
-	padding:60px 0px;
+	padding:20px 0px;
 	display: grid;
-	grid-template-columns: repeat(2,.5fr);
+	grid-template-columns: auto auto;
 	grid-gap: 1em;
 }
 
 .works_box .box{
 	position: relative;
-	margin: auto;
+	margin: 0 auto;
 	background: rgb(41, 40, 38);
 	padding: 0;
 	border-radius: 10px;
 	font-size: 12px;
 	letter-spacing: 1.5px;
-}
-.works_box .box img{
-   width: 1000px;
-   height: 527px;
-   transition: .5s;
 }
 
 
@@ -350,8 +345,9 @@ transform: scaleX(1);
 
 .works_box .box img{
 	object-fit: cover;
-	width: 450px;
+	width: 100%;
 	height: 243px;
+	transition: .5s;
 	border-radius: 10px 10px 0 0;
 
 }
@@ -363,7 +359,7 @@ transform: scaleX(1);
 .skills_box{
 	padding:60px 0px;
 	display: grid;
-	grid-template-columns: repeat(4,2fr);
+	grid-template-columns: auto auto auto auto;
 	grid-gap: 1em;
 }
 
@@ -402,12 +398,12 @@ transform: scaleX(1);
 	width: 60%;
 	min-width: 350px;
 	padding: 10px;
-	margin: auto;
+	margin: 0 auto;
 	border-radius: 10px;
 }
 
 .contact_box .box ul{
-	margin: auto;
+	margin:0 auto;
 	width: 53%;
 }
 .contact_box .box li{
@@ -439,7 +435,7 @@ section#contact{
 	}
 
 	.skills_box{
-			grid-template-columns: repeat(2,2fr);
+			grid-template-columns: auto auto;
 	}
 
 	.works_box{
@@ -465,7 +461,7 @@ section#contact{
 
 @media(max-width: 580px){
 	.skills_box{
-			grid-template-columns: repeat(1,2fr);
+			grid-template-columns: auto;
 	}
 
 	.works_box .box img, .works_box .box .visit_box {

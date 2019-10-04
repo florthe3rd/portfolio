@@ -8,7 +8,7 @@ $(document).ready(function(){
 			$('body').toggleClass('active');
 		});
 
-		$('nav ul li a').click(function(){
+		$('nav ul li a').on("click", function(){
 					$('.display').removeClass('active');
 					$('.toggle').removeClass('active');
 					$('.overlay').removeClass('active');
