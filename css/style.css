@@ -356,7 +356,9 @@ transform: scaleX(1);
 	padding:60px 0px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
-	grid-gap: 1em;
+	grid-gap: 30px;
+	justify-content: center;
+	align-items: start;
 }
 
 .skills_box .box{
@@ -364,9 +366,7 @@ transform: scaleX(1);
 	width: 25%;
 	min-width: 250px;
 	text-align: center;
-	padding: 10px;
 	border-radius: 10px;
-	margin: 0 auto;
 }
 
 
@@ -418,6 +418,9 @@ section#contact{
 
 
 @media(max-width: 1024px){
+	#home-heading h1{
+		font-size: 30px;
+	}
 	.toggle{
 		background: #f9d342;
 	}
@@ -439,34 +442,25 @@ section#contact{
 		margin: 0 auto;
 		font-size: 2.34375vw;
 	}
+	.works_box{
+		grid-template-columns: repeat(1,2fr);
+	}
 
 	#about h1, #skills h1, #works h1, #contact h1{
 		font-size: 30px;
 	}
-	
-}
-
-@media(max-width: 1119px){
-	
-	
+	.skills_box{
+		grid-template-columns: auto auto;
+	}
 	.contact_box .box ul{
 		width: 80%;
 	}
-
-	.skills_box{
-			grid-template-columns: auto auto;
-	}
-
-	.works_box{
-			grid-template-columns: repeat(1,2fr);
-		}
-
+	
 }
 
+
 @media(max-width: 815px){
-	#home-heading h1{
-			font-size: 30px;
-	}
+	
 
 	
 	.contact_box .box ul{
