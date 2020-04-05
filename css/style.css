@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body{
@@ -238,7 +239,7 @@ transform: scaleX(1);
 	text-transform: uppercase;
 	font-size: 50px;
 	color: #f9d342;
-	width: 50%;
+	width: 65%;
 	margin: auto;
 
 }
@@ -386,34 +387,43 @@ transform: scaleX(1);
 
 }
 
+#contact{
+	background-color: #f9d342;
+}
+#contact h1{
+	color: rgb(41, 40, 38);
+}
+
+#contact h3{
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+#contact h1 hr{
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(41, 40, 38,0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .contact_box{
-	padding:60px 0px;
+	padding:40px 0px;
 }
 .contact_box .box{
-	background-color: rgb(41, 40, 38);
-	width: 60%;
-	min-width: 350px;
-	padding: 10px;
-	margin: 0 auto;
-	border-radius: 10px;
+	width: 100%;
 }
 
 .contact_box .box ul{
 	margin:0 auto;
-	width: 53%;
 }
 .contact_box .box li{
-	padding: 10px;
+	padding: 15px;
 	list-style-type: none;
-	text-align: left;
-	width: 100;
+	text-align: center;
+	color: rgb(41, 40, 38);
+	font-weight: bold;
+	font-size: 20px;
 }
 
 
-section#contact{
-	min-height: 80vh;
-	
-}
 
 
 
@@ -452,71 +462,19 @@ section#contact{
 	.skills_box{
 		grid-template-columns: auto auto;
 	}
-	.contact_box .box ul{
-		width: 80%;
-	}
-	
-}
 
-
-@media(max-width: 815px){
-	
-
-	
-	.contact_box .box ul{
-		width: 90%;
-	}
-
-
-}
-
-@media(max-width: 580px){
-	.skills_box{
-			grid-template-columns: auto;
-	}
-
-
-	.works_box .box .visit_box h3{
-		font-size: 18px;
-		padding: 7px;
-	}
-
-}
-
-@media(max-width: 580px){
-	#home-heading h1{
-			font-size: 20px;
-	}
-
-	#about h1, #skills h1, #works h1, #contact h1{
-			font-size: 20px;
-	}
-
-	#about h3 , #skills h3, #works h3, #contact h3{
-			font-size: 15px;
-	}
-	.prof_pic{
-			width: 200px;
-			height: 200px;
-	}
-	
-	
-
-}
-
-
-@media(max-width: 425px){
-	.contact_box .box{
-			width: 80%;
-			min-width: 239px;
-	}
 	.contact_box .box li{
-			font-size: 11px;
+		font-size: 2.8vw;
 	}
-
 	
 	
 }
+
+
+
+
+
+
 
 @media(max-width: 414px){
 
@@ -529,6 +487,12 @@ section#contact{
 		font-size: 3.2vw;
 		margin: 20px 0;
 	}
+
+	.prof_pic{
+		width: 200px;
+		height: 200px;
+	}
+
 	
 	section{
 		padding: 25px 35px;
@@ -547,6 +511,32 @@ section#contact{
 			font-size: 12px;
 	}
 
+	#home-heading h1{
+		font-size: 20px;
+	}
+
+	#about h1, #skills h1, #works h1, #contact h1{
+			font-size: 20px;
+	}
+
+	#about h3 , #skills h3, #works h3, #contact h3{
+			font-size: 15px;
+	}
+	.skills_box{
+		grid-template-columns: auto;
+	}
+
+
+	.works_box .box .visit_box h3{
+		font-size: 18px;
+		padding: 7px;
+	}
+	.contact_box .box li{
+		font-size: 3.9vw;
+	}
+	
+	
+	
 }
 
 
