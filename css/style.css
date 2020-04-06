@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 }
 
 body{
@@ -203,7 +202,7 @@ transform: scaleX(1);
 	right: 10%;
 	padding: 10px;
 	background-color: rgba(41, 40, 38, .8);
-	width: 60%;
+	width: 45vw;
 	border-radius: 5px;
 }
 
@@ -270,7 +269,7 @@ transform: scaleX(1);
 	width: 50%;
     line-height: 1.5;
     text-align: justify;
-    font-size: 1.25vw;
+    font-size: 1.12vw;
     padding: 1vh 0;
 }
 
@@ -363,9 +362,6 @@ transform: scaleX(1);
 }
 
 .skills_box .box{
-	
-	width: 25%;
-	min-width: 250px;
 	text-align: center;
 	border-radius: 10px;
 }
@@ -380,7 +376,7 @@ transform: scaleX(1);
 
 
 .skills_box .box li{
-	padding: 15px;
+	padding: 7px;
 	list-style-type: none;
 	font-weight: bold;
 	font-size: 16px;
@@ -415,7 +411,7 @@ transform: scaleX(1);
 	margin:0 auto;
 }
 .contact_box .box li{
-	padding: 15px;
+	padding: 5px;
 	list-style-type: none;
 	text-align: center;
 	color: rgb(41, 40, 38);
@@ -464,7 +460,7 @@ transform: scaleX(1);
 	}
 
 	.contact_box .box li{
-		font-size: 2.8vw;
+		font-size: 2.5vw;
 	}
 	
 	
