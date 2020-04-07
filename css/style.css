@@ -202,7 +202,7 @@ transform: scaleX(1);
 	right: 10%;
 	padding: 10px;
 	background-color: rgba(41, 40, 38, .8);
-	width: 45vw;
+	width: 52vw;
 	border-radius: 5px;
 }
 
@@ -271,6 +271,22 @@ transform: scaleX(1);
     text-align: justify;
     font-size: 1.12vw;
     padding: 1vh 0;
+}
+.prof_detail .status{
+	background-color: rgb(41, 40, 38);
+	width: 100%;
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.prof_detail .status ul{
+	display: grid;
+	grid-template-columns: auto auto ;
+}
+.prof_detail .status ul li{
+	list-style: none;
+	padding: 5px 0;
 }
 
 
@@ -350,6 +366,60 @@ transform: scaleX(1);
 
 .works_box .box h4{
 	padding: 5px;
+}
+
+#skills{
+	position: relative;
+}
+#skills .left,#skills .right{
+	display: block;
+	position: absolute;
+	width: 4.5vw;
+}
+
+#skills .html{
+	top: 10%;
+	left: 10%;
+}
+
+#skills .css{
+	top: 25%;
+	left: 5%;
+}
+#skills .javascript{
+	top: 40%;
+	left: 10%;
+}
+
+#skills .bootstrap{
+	top: 55%;
+	left: 5%;
+}
+#skills .php{
+	top: 70%;
+	left: 10%;
+}
+
+#skills .java{
+	top: 10%;
+	right: 10%;
+}
+#skills .git{
+	top: 25%;
+	right: 5%;
+}
+#skills .sass{
+	top: 40%;
+	right: 10%;
+}
+#skills .wordpress{
+	top: 55%;
+	right: 5%;
+}
+
+#skills .jquery{
+	top: 70%;
+	right: 10%;
 }
 
 .skills_box{
@@ -455,6 +525,10 @@ transform: scaleX(1);
 	#about h1, #skills h1, #works h1, #contact h1{
 		font-size: 30px;
 	}
+	#skills .left,#skills .right{
+		width: 8%;
+	}
+
 	.skills_box{
 		grid-template-columns: auto auto;
 	}
@@ -483,11 +557,16 @@ transform: scaleX(1);
 		font-size: 3.2vw;
 		margin: 20px 0;
 	}
+	.prof_detail .status ul{
+		grid-template-columns: auto;
+	}
 
 	.prof_pic{
 		width: 200px;
 		height: 200px;
 	}
+
+	
 
 	
 	section{
@@ -517,6 +596,11 @@ transform: scaleX(1);
 
 	#about h3 , #skills h3, #works h3, #contact h3{
 			font-size: 15px;
+	}
+
+
+	#skills .left,#skills .right{
+		display: none;
 	}
 	.skills_box{
 		grid-template-columns: auto;
