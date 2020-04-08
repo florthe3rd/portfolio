@@ -18,3 +18,31 @@ $(document).ready(function(){
     	
 
 });
+
+
+
+
+
+const dropDownSkills = () =>{
+	const dropTitles= document.querySelectorAll('.drop-title');
+	const drops= document.querySelectorAll('.drop');
+	const ups= document.querySelectorAll('.up');
+
+	dropTitles.forEach(function(dropTitle,dropTitleIndex){
+		drops.forEach(function(drop,dropIndex){
+			dropTitle.addEventListener('click',()=>{
+				if(dropTitleIndex == dropIndex){
+					drop.classList.toggle('down');
+					ups.forEach(function(up,upIndex){
+						if(dropTitleIndex == upIndex){
+							up.classList.toggle('arrowdown');
+						}
+					});
+				}
+			});
+		});
+	});
+}
+
+
+dropDownSkills();

@@ -444,6 +444,13 @@ transform: scaleX(1);
 	color:#f9d342;
 }
 
+.skills_box .box h2 .up{
+	display: none;
+}
+
+.skills_box .box .drop {
+	display: block;
+}
 
 .skills_box .box li{
 	padding: 7px;
@@ -604,6 +611,21 @@ transform: scaleX(1);
 	}
 	.skills_box{
 		grid-template-columns: auto;
+	}
+
+	.skills_box .box h2 .up{
+		display: inline-block;
+	}
+
+	.skills_box .box h2 .up.arrowdown{
+		transform: rotate(180deg);
+	}
+
+	.skills_box .box .drop{
+		display: none;
+	}
+	.skills_box .box .drop.down{
+		display: block;
 	}
 
 
