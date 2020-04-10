@@ -14,9 +14,6 @@ $(document).ready(function(){
 					$('.overlay').removeClass('active');
 					$('body').toggleClass('active');
 			});
-		 
-    	
-
 });
 
 
@@ -31,13 +28,15 @@ const dropDownSkills = () =>{
 	dropTitles.forEach(function(dropTitle,dropTitleIndex){
 		drops.forEach(function(drop,dropIndex){
 			dropTitle.addEventListener('click',()=>{
-				if(dropTitleIndex == dropIndex){
-					drop.classList.toggle('down');
-					ups.forEach(function(up,upIndex){
-						if(dropTitleIndex == upIndex){
-							up.classList.toggle('arrowdown');
-						}
-					});
+				if(414 >= window.innerWidth){
+					if(dropTitleIndex == dropIndex){
+						drop.classList.toggle('down');
+						ups.forEach(function(up,upIndex){
+							if(dropTitleIndex == upIndex){
+								up.classList.toggle('arrowdown');
+							}
+						});
+					}
 				}
 			});
 		});
